@@ -2,13 +2,6 @@ import {Router, Request} from 'express';
 
 const router = Router();
 
-router.post('/login', (req: Request, res) => {
-    try {
-
-    }
-    catch (err) {
-
-    }
-});
-
+router.post('/login', () => {});
+router.delete('/logout', () => {});
 export default router;
