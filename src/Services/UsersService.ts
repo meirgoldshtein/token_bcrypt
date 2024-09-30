@@ -34,4 +34,12 @@ export default class UserService {
             }
         }
     }
+
+    public static  getAllUsers(): User[] {
+        return users
+    }
+
+    public static  getUserById(id: string): User | undefined {
+        return users.find(user => user.id === id)
+    }
 }
